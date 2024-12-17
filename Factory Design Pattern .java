@@ -1,10 +1,10 @@
 
 //PROBLEM STATEMENT :
 /* Implement a factory design pattern for the given context . Consider Car building process ,
- *  which requires many steps from allocating accessories to final makeup. These steps should 
- *  be written as methods and should be called while creating an instance of specific  car type. 
- *  Hatchback, Sedan, SUV , could be the subclasses Car class. Car class and Car class its subclasses
- *   , CarFactory and Test Factory Pattern should be implemented */
+   which requires many steps from allocating accessories to final makeup. These steps should 
+   be written as methods and should be called while creating an instance of specific  car type. 
+   Hatchback, Sedan, SUV , could be the subclasses Car class. Car class and Car class its subclasses
+   CarFactory and Test Factory Pattern should be implemented */
 
 
 package assignment;
@@ -190,57 +190,3 @@ public class Main {
 		}
 	}
 }
-
-/*
- 
-  ##OUTPUT##
-
-
---------------------------------------
- Constructing Hatchback Car 
---------------------------------------
-Types of Tyres- Alloy Wheels
-Airbags- YES
-Back Wiper- YES
-Side Mirror- one
-Touch Screen Music Player- NO
-Roof Window- YES
-Automotive Garbage Cans- YES
-Automotice Air Freshner- NO
-Button Start- YES
---------------------------------------
-assignment.hatchback1@17a7cec2
-
-
---------------------------------------
- Constructing sedan car 
---------------------------------------
-Types of Tyres- Alloy Wheels
-Airbags- YES
-Back Wiper- NO
-Side Mirror- ONE
-Touch Screen Music Player- YES
-Roof Window- YES
-Automotive Garbage Cans- YES
-Automotice Air Freshner- NO
-Button Start- YES
---------------------------------------
-assignment.sedan2@6f539caf
-
-
---------------------------------------
- Constructing SUV Car 
---------------------------------------
-Types of Tyres- Alloy Wheels
-Airbags- YES
-Back Wiper- YES
-Side Mirror- Two
-Touch Screen Music Player- YES
-Roof Window- YES
-Automotive Garbage Cans- NO
-Automotice Air Freshner- YES
-Button Start- YES
---------------------------------------
-assignment.suv@50040f0c
-
-*/
