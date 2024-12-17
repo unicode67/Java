@@ -1,3 +1,70 @@
+//Problem Statement::
+/*
+  design a base class shape with two double type values and member function to 
+  input the data and compute area() for calculating area of shape. Derive two classes 
+  Triangle and Rectangle make compute area() as abstract function and redefine this function 
+  in the derive class to suit their requirement .Write a program that accepts the dimension 
+  of Triangle /Rectangle and display calculated area. Implement dynamic binding.
+  */
+
+package assignment;
+import java.util.*;
+abstract class shape {
+	
+	private double dimen1,dimen2;		//private data members
+	
+	double getDimen1()		//method to return dimension 1
+	{
+		return dimen1;
+	}
+	
+	double getDimen2()		//method to return dimension 2
+	{
+		return dimen2;
+	}
+	
+	shape(){};				//default constructor
+	
+	shape(double a,double b)	//parameterized constructor
+	{
+		dimen1=a;
+		dimen2=b;
+	}
+	
+	abstract double compute_area();		//abstract method to calculate area
+
+	void read()				//method to take dimensions as input from user
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("ENTER  FIRST  DIMENSION :  ");
+		dimen1=sc.nextDouble();		//read dimension 1 from user
+		System.out.print("ENTER SECOND  DIMENSION :  ");
+		dimen2=sc.nextDouble();		//read dimension 2 from user
+	}
+	
+}
+
+//======================= CLASS triangle =======================//
+class triangle extends shape{
+	
+	double area;		
+	
+	triangle(){}		//default constructor
+	
+	triangle(double base, double height)		//parameterized constructor
+	{
+		super(base,height);		//call to parameterized constructor of shape class
+	}
+	
+	 double compute_area()		// method to calculate and return area of 
+	{
+		 area=(getDimen1()*getDimen2())/2;
+		 return area;
+	}
+}
+
+
+//======================= CLASS rectangle =======================//
 class rectangle extends shape {
 	
 	double area;
